@@ -8,9 +8,9 @@ import { Product, products } from '../products';
   styleUrls: ['./product-details.component.css']
 })
 
-@Component({
-  selector: 'currency-pipe',
-})
+// @Component({
+//   selector: 'currency-pipe',
+// })
 export class ProductDetailsComponent implements OnInit {
   product: Product|undefined;
   constructor(
