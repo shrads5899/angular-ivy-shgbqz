@@ -1,3 +1,4 @@
+import { CurrencyPipe } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Product, products } from '../products';
@@ -5,6 +6,10 @@ import { Product, products } from '../products';
   selector: 'app-product-details',
   templateUrl: './product-details.component.html',
   styleUrls: ['./product-details.component.css']
+})
+
+@Component({
+  selector: 'currency-pipe',
 })
 export class ProductDetailsComponent implements OnInit {
   product: Product|undefined;
