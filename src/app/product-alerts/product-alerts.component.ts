@@ -7,24 +7,11 @@ import { Product } from '../products';
   styleUrls: ['./product-alerts.component.css']
 })
 export class ProductAlertsComponent implements OnInit {
-  @Input()
-  productI!: Product;
-  @Output() notify = new EventEmitter();
-  constructor() {}
+  @Input() product: Product|undefined;
+  @Output() notify = new EventEmitter()
+  constructor() { }
 
-  ngOnInit() {}
+  ngOnInit() {
+  }
+
 }
-
-// // Typescript
-// // decorators, annotations
-// @Component(
-//   {
-//     selector: 'app-pac',
-//     templateUrl: './pac.component.html',
-//     styleUrls: ['./pac1.component.css']
-//   }
-// )
-// export class PAC {
-// // properties (fields)
-// // methods
-// }
